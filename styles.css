@@ -1,0 +1,137 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin-top: 100px;
+  background: #000 url('/back.jpg')no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
+}
+
+.tickets{
+  border-radius: 5px;
+  outline: none ;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+}
+
+.button1{
+  background-color: #cd6144; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 10px;
+    outline: none;
+    
+}
+
+.button1:hover {
+  background-color:#a54f37; /* Green */
+  color: white;
+}
+.button2:hover {
+  background-color:#a54f37; /* Green */
+  color: white;
+}
+
+.button2{
+  background-color: #cd6144; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
+select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  border:0!important;
+  background: #067ac7; 
+  background-image: none;
+  flex: 1;
+  color:#fff;
+  cursor:pointer;
+  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  color:#fff;
+  line-height: 3;
+  background: #067ac7; 
+  overflow: hidden;
+}
+.select::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1.2em;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+}
+.select:hover::after {
+  color: #23b499;
+}
+
+.route {
+  display: table-cell;
+  text-align: justify;
+  font-size: 1.5rem;
+  display: inline-block;
+  border-spacing: 20px 20px;
+  background: #067ac7; 
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.bying {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  box-shadow:none;
+  background: #067ac7; 
+  background-image: none;
+  flex: 1;
+  padding: 0 .1em;
+  color:#fff;
+  cursor:pointer;
+  font-size: 0.9em;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 2%;
+}
+
+.out4 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}

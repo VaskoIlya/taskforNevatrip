@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Заказы</title>
+  <link href="styles.css" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+      
+      <div class="route">
+      <label>Выберите путь и время</label>
+        
+      <div class="select" id="way" name=" MyForm">
+      <select id="input way" name="input way" id="input way">
+        <option class="input way1" value='1' onchange="myClick();">из A в B</option>
+        <option class="input way2" value='2' onchange="myClick();"> из B в A</option>
+        <option class="input way3" value='3' onchange="myClick();"> из A в B и обратно в А</option>
+    </select>
+      
+    <select id="input typeOfWay">
+    <option id="1" value="1">18:00(из A в B)</option>
+    <option id="2" value="2">18:30(из A в B)</option>
+    <option id="3" value="3">18:45(из A в B)</option>
+    <option id="4" value="4">19:00(из A в B)</option>
+    <option id="5" value="5">19:15(из A в B)</option>
+    <option id="6" value="6">21:00(из A в B)</option>
+    <option id="7" value="7">18:30(из B в A)</option>
+    <option id="8" value="8">18:45(из B в A)</option>
+    <option id="9" value="9">19:00(из B в A)</option>
+    <option id="10" value="10">19:15(из B в A)</option>
+    <option id="11" value="11">19:35(из B в A)</option>
+    <option id="12" value="12">21:50(из B в A)</option>
+    <option id="13" value="13">21:55(из B в A)</option>
+    
+  </div>
+</select>
+      </div>
+
+    <div class="bying">
+<label for="num">Количество билетов</label>
+<input id="num" class="tickets" value="" type="number">
+<button class="button1" id="checkButt">Посчитать</button>
+<div class="out"></div>
+</div>
+
+<div class="out"></div>
+
+<div class="out1"> </div>
+<div class="out2"> </div>
+<div class="out3"> </div>
+<div id = "out4" class="out4"> Отправитесь обратно в 
+<select id ="timeToBack" name="timeToBack">
+<option id ="1">19:00(из B в A)</option>
+<option id ="2">19:15(из B в A)</option>
+<option id ="3">19:35(из B в A)</option>
+<option id ="4">21:50(из B в A)</option>
+<option id ="5">21:55(из B в A)</option>
+</div>
+</div>
+</select>
+    </div>
+    
+    
+    </div>
+    
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
