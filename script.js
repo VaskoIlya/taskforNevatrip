@@ -12,10 +12,7 @@ function myClick(){
      let way;
 
         // реализация первой строчки результата
-        if(quantityTicks < 1){
-                return alert('Введите число билетов!');
-        }
-        else if(quantityTicks = 1 || quantityTicks == 21){
+        if(quantityTicks <= 1 || quantityTicks == 21){
                 declination = "билет";
         }
         else if (1 < quantityTicks <= 4){
